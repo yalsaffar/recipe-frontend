@@ -18,6 +18,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '18.x'
+      - name: Install dependencies
+        run: npm install bootstrap-vue
+
 
       - name: npm install, build, and test
         run: |
