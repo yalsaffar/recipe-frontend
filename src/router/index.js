@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Skull from '../components/Skull.vue'
 import AppRecipe from '../components/AppRecipe.vue'
+import Home from '../components/Home.vue'
 
 Vue.use(VueRouter)
 
@@ -14,7 +15,11 @@ const routes = [
   {
     path: '/recipe',
     name: 'Recipe',
-    component: AppRecipe}
+    component: AppRecipe},
+    {
+      path: '/',
+      name: 'Home',
+      component: Home}
 ]
 
 const router = new VueRouter({
