@@ -1,6 +1,17 @@
 <template>
+   
   <div class="jumbotron vertical-center">
       <div class = "container">
+        <nav>
+    <ul class="nav">
+      <li>
+        <a href="/">Home </a>
+      </li>
+      <li>
+        <a href="/recipe">Recipe</a>
+      </li>
+    </ul>
+  </nav>
           <div class = "row">
               <div class = "col-sm-12">
                   <h1>Recipes</h1>
@@ -13,7 +24,7 @@
 
         <button
           type="button"
-          class="btn btn-success btn-sm"
+          class="btn btn-dark btn-sm"
           v-b-modal.recipe-modal
         >
           Create 
@@ -250,8 +261,7 @@
  
   
 
-</template>
-
+</template> 
 
 <script>
   
@@ -442,5 +452,55 @@
   display: flex;
   align-items: center;
 }
+
+.jumbotron {
+  background-image: url('https://img.freepik.com/premium-photo/food-cooking-background-stone-texture-with-sea-salt-pepper-garlic-parsley-light-grey-abstract-food-background-empty-space-text-can-be-used-food-posters-design-menu-top-view_253362-16400.jpg?w=2000');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+
+  height: 500px;
+  color: black;
+  text-align: center;
+  font-family: Andale Mono, monospace;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Andale Mono, monospace;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-family: Andale Mono, monospace;
+}
+
+th {
+  background-color: #eee;
+  font-weight: bold;
+  font-family: Andale Mono, monospace;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  padding: 10px;
+  font-family: Andale Mono, monospace;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
 </style>
 
