@@ -11,8 +11,8 @@
         </ul>
       </nav>
       <div class="content" style="text-align: center;">
-  <h1>Welcome to my Vue app!</h1>
-  <p>You will have the chance to add your recipes or generate new ones!</p>
+  <h1>Welcome to my Recipes App!</h1>
+  <p>You will have the chance to add your recipes here!</p>
   <router-link to="/recipe" class="btn btn-dark">View Recipe</router-link>
 </div>
 
